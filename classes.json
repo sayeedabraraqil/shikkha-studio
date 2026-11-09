@@ -1,0 +1,93 @@
+{
+  "site": {
+    "name": "Shikkha Studio",
+    "subtitle": "SSC Science · Class 10 · Bangladesh",
+    "description": "Your focused classroom for SSC preparation."
+  },
+  "subjects": [
+    {
+      "name": "Physics",
+      "bn": "পদার্থবিজ্ঞান",
+      "icon": "⚛️"
+    },
+    {
+      "name": "Chemistry",
+      "bn": "রসায়ন",
+      "icon": "🧪"
+    },
+    {
+      "name": "Biology",
+      "bn": "জীববিজ্ঞান",
+      "icon": "🧬"
+    },
+    {
+      "name": "Higher Mathematics",
+      "bn": "উচ্চতর গণিত",
+      "icon": "📐"
+    },
+    {
+      "name": "General Mathematics",
+      "bn": "সাধারণ গণিত",
+      "icon": "➗"
+    },
+    {
+      "name": "ICT",
+      "bn": "তথ্য ও যোগাযোগ প্রযুক্তি",
+      "icon": "💻"
+    },
+    {
+      "name": "Bangla",
+      "bn": "বাংলা",
+      "icon": "📖"
+    },
+    {
+      "name": "English",
+      "bn": "ইংরেজি",
+      "icon": "🔤"
+    },
+    {
+      "name": "Bangladesh & Global Studies",
+      "bn": "বাংলাদেশ ও বিশ্বপরিচয়",
+      "icon": "🌏"
+    },
+    {
+      "name": "Religion & Moral Education",
+      "bn": "ধর্ম ও নৈতিক শিক্ষা",
+      "icon": "☀️"
+    },
+    {
+      "name": "Agriculture Studies",
+      "bn": "কৃষিশিক্ষা",
+      "icon": "🌱"
+    }
+  ],
+  "classes": [
+    {
+      "id": "phy-001",
+      "title": "Newton's Laws of Motion",
+      "subject": "Physics",
+      "chapter": "Chapter 2 · Motion",
+      "lecture": 1,
+      "youtubeUrl": "https://www.youtube.com/watch?v=VIDEO_ID",
+      "description": "Replace this example link with your actual YouTube class."
+    },
+    {
+      "id": "chem-001",
+      "title": "Introduction to Chemical Reactions",
+      "subject": "Chemistry",
+      "chapter": "Chapter 3 · Matter and Chemical Reactions",
+      "lecture": 1,
+      "youtubeUrl": "https://www.youtube.com/watch?v=VIDEO_ID",
+      "description": "Replace this example link with your actual YouTube class."
+    },
+    {
+      "id": "bio-001",
+      "title": "Cell Structure and Function",
+      "subject": "Biology",
+      "chapter": "Chapter 1 · Cell and Tissue",
+      "lecture": 1,
+      "youtubeUrl": "https://www.youtube.com/watch?v=VIDEO_ID",
+      "description": "Replace this example link with your actual YouTube class."
+    }
+  ]
+}

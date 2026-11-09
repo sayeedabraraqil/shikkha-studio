@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f4f1e9">
+<meta name="description" content="Shikkha Studio — focused SSC Class 10 learning for students in Bangladesh.">
+<title>Shikkha Studio — SSC Classroom</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1e9;--paper:#fffdf8;--ink:#20251f;--muted:#777d73;--green:#315b45;--green2:#e5eee3;--line:#e8e4d9;--gold:#d5ad63;--shadow:0 18px 55px rgba(39,48,38,.08);--r:23px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans","Hind Siliguri",sans-serif}button,input,select{font:inherit}button{cursor:pointer}.shell{max-width:1420px;margin:auto;padding:22px 30px 48px}
+header{height:64px;display:flex;align-items:center;justify-content:space-between;margin-bottom:23px}.brand{display:flex;gap:12px;align-items:center}.mark{height:45px;width:45px;border-radius:15px;background:var(--green);display:grid;place-items:center;color:white;font-family:"Hind Siliguri",sans-serif;font-weight:700;font-size:25px;box-shadow:0 8px 20px #315b4525}.brand-name{font-weight:800;letter-spacing:-.5px;font-size:18px}.brand-sub{font-size:10px;letter-spacing:1.3px;color:var(--muted);margin-top:3px}.header-right{font-size:12px;color:var(--muted);background:var(--paper);border:1px solid var(--line);padding:10px 14px;border-radius:50px}
+.hero{display:grid;grid-template-columns:1.45fr .75fr;gap:17px}.hero-main{background:var(--green);color:white;border-radius:29px;padding:34px;min-height:230px;position:relative;overflow:hidden}.hero-main:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #ffffff25;border-radius:50%;right:-45px;top:-105px;box-shadow:0 0 0 30px #ffffff09,0 0 0 65px #ffffff06}.eyebrow{font-size:10px;letter-spacing:2px;font-weight:800;color:#d7e6d8;text-transform:uppercase}.hero h1{font-size:clamp(31px,4vw,48px);line-height:1.04;letter-spacing:-2px;margin:17px 0 12px;max-width:600px}.hero p{font-size:13px;line-height:1.7;color:#dbe6dc;max-width:500px;margin:0}.hero-side{background:var(--paper);border:1px solid var(--line);border-radius:29px;padding:27px;display:flex;flex-direction:column;justify-content:space-between}.side-label{font-size:11px;color:var(--muted)}.side-number{font-size:37px;font-weight:800;letter-spacing:-1.5px;margin:7px 0}.side-note{font-size:11px;color:var(--muted);line-height:1.6}.side-icon{font-size:26px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:31px 0 15px}.section-head h2{font-size:19px;letter-spacing:-.5px;margin:0}.section-head p{font-size:12px;color:var(--muted);margin:5px 0 0}.subject-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:11px}.subject{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:15px;text-align:left;transition:.18s;color:var(--ink);min-height:103px}.subject:hover,.subject.active{background:var(--green2);border-color:#9eb69e;transform:translateY(-2px)}.subject-icon{font-size:21px}.subject strong{display:block;font-size:12px;margin-top:9px}.subject small{display:block;font-family:"Hind Siliguri",sans-serif;color:var(--muted);font-size:11px;margin-top:3px}
+.tools{display:flex;gap:10px;margin:27px 0 17px;flex-wrap:wrap}.search{flex:1;min-width:230px;position:relative}.search:before{content:"⌕";position:absolute;left:15px;top:6px;font-size:26px;color:var(--muted)}.search input{width:100%;height:46px;padding:0 15px 0 43px;background:var(--paper);border:1px solid var(--line);border-radius:14px;outline:none}.tools select{height:46px;padding:0 14px;background:var(--paper);border:1px solid var(--line);border-radius:14px;color:var(--ink);outline:none}.count{font-size:11px;background:var(--paper);border:1px solid var(--line);padding:9px 12px;border-radius:30px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.card{background:var(--paper);border:1px solid var(--line);border-radius:21px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.art{height:143px;display:grid;place-items:center;position:relative;background:linear-gradient(135deg,#dce8d9,#f1eadb)}.art:before,.art:after{content:"";position:absolute;border:1px solid #315b4520;border-radius:50%;width:125px;height:125px}.art:after{width:85px;height:85px}.art .subject-icon{font-size:38px;z-index:1}.tag{position:absolute;left:13px;top:13px;background:#fffdf0e8;border-radius:30px;padding:6px 10px;font-size:10px;font-weight:700}.play-icon{position:absolute;right:14px;bottom:13px;background:#fffdf0e8;color:var(--green);width:35px;height:35px;border-radius:50%;display:grid;place-items:center;padding-left:2px}.card-body{padding:16px}.card h3{font-size:14px;line-height:1.45;margin:0 0 9px}.meta{font-size:11px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}.card-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:16px}.watch{background:var(--green);border:0;color:white;padding:10px 13px;border-radius:11px;font-size:11px;font-weight:700}.watch:hover{background:#244735}.empty{grid-column:1/-1;text-align:center;background:var(--paper);border:1px dashed #d6d1c5;border-radius:20px;padding:50px 20px;color:var(--muted)}.empty b{color:var(--ink);display:block;margin:9px}
+footer{margin-top:45px;border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:10px}
+.overlay{position:fixed;inset:0;z-index:20;background:#101710c9;display:none;align-items:center;justify-content:center;padding:18px;backdrop-filter:blur(8px)}.overlay.open{display:flex}.player-modal{width:min(940px,100%);background:var(--paper);border-radius:23px;padding:19px;box-shadow:0 30px 100px #0005}.modal-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}.modal-top .eyebrow{color:var(--green)}.modal-title{font-weight:800;font-size:16px;margin-top:4px}.close{border:0;background:#efede5;width:36px;height:36px;border-radius:50%;font-size:21px;color:var(--ink)}.video-frame{position:relative;background:#101010;aspect-ratio:16/9;border-radius:15px;overflow:hidden}.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.end-cover{display:none;position:absolute;inset:0;background:#1c2c21;color:white;z-index:3;align-items:center;justify-content:center;text-align:center;padding:20px}.end-cover.show{display:flex}.end-cover .check{font-size:36px}.end-cover h3{font-size:24px;margin:10px 0}.end-cover p{font-size:13px;color:#d5dfd5}.back-btn{margin-top:8px;border:0;background:#e4ecdf;color:#203d2b;border-radius:11px;padding:11px 16px;font-weight:800}.now-title{font-size:17px;font-weight:800;margin:14px 0 5px}.now-meta,.now-desc{font-size:12px;color:var(--muted);line-height:1.6}.now-desc{margin-top:6px}
+@media(max-width:1000px){.subject-grid{grid-template-columns:repeat(4,1fr)}.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.shell{padding:14px 15px 35px}header{margin-bottom:17px}.header-right{display:none}.hero{grid-template-columns:1fr}.hero-main{padding:26px;min-height:215px}.hero-side{min-height:120px}.subject-grid{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr}.tools>*{width:100%}.section-head{align-items:flex-start;flex-direction:column}.player-modal{padding:12px}.modal-title{font-size:14px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header>
+ <div class="brand"><div class="mark">শি</div><div><div class="brand-name">Shikkha Studio</div><div class="brand-sub">SSC SCIENCE · CLASS 10 · BANGLADESH</div></div></div>
+ <div class="header-right">A focused space to learn</div>
+</header>
+<section class="hero">
+ <div class="hero-main"><div class="eyebrow">LEARN WITH FOCUS</div><h1>Your classroom.<br>Without distractions.</h1><p>SSC lessons, organized by subject and chapter. Choose a class, focus on the lesson, and keep moving towards your goal.</p></div>
+ <aside class="hero-side"><div><div class="side-label">YOUR SSC LEARNING SPACE</div><div class="side-number" id="totalClasses">—</div><div class="side-note">Curated lessons in one organized classroom.</div></div><div class="side-icon">📚 <span style="font-size:11px;color:var(--muted)">One class at a time.</span></div></aside>
+</section>
+<div class="section-head"><div><h2>Explore subjects</h2><p>Select a subject to find its classes.</p></div><span class="count" id="subjectCount">0 subjects</span></div>
+<section class="subject-grid" id="subjects"></section>
+<div class="tools">
+ <div class="search"><input id="search" type="search" placeholder="Search classes, chapters or topics..."></div>
+ <select id="chapter"><option value="">All chapters</option></select>
+ <select id="sort"><option value="newest">Recently added</option><option value="title">Title A–Z</option><option value="lecture">Lecture number</option></select>
+</div>
+<div class="section-head"><div><h2 id="listTitle">All classes</h2><p id="listSub">Browse the complete class library.</p></div><span class="count" id="classCount">Loading classes...</span></div>
+<section class="cards" id="cards"><div class="empty">Loading your classroom...</div></section>
+<footer><span>SHIKKHA STUDIO · SSC CLASS 10</span><span>Made for focused learning in Bangladesh.</span></footer>
+</div>
+<div class="overlay" id="playerOverlay" aria-hidden="true">
+ <div class="player-modal">
+  <div class="modal-top"><div><div class="eyebrow">NOW IN YOUR CLASSROOM</div><div class="modal-title">Focused lesson player</div></div><button class="close" id="closePlayer" aria-label="Close player">×</button></div>
+  <div class="video-frame" id="videoFrame"><div class="end-cover" id="endCover"><div><div class="check">✓</div><h3>Class completed</h3><p>This lesson has ended. Choose another class when you're ready.</p><button class="back-btn" id="backToClasses">Back to classes</button></div></div></div>
+  <div class="now-title" id="nowTitle"></div><div class="now-meta" id="nowMeta"></div><div class="now-desc" id="nowDesc"></div>
+ </div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const safe=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let library={subjects:[],classes:[]},activeSubject="All",currentPlayer=null,currentClass=null,apiLoading=false;
+function extractId(value){
+ try{
+  const u=new URL(value);
+  if(u.hostname==="youtu.be")return u.pathname.split("/").filter(Boolean)[0]||null;
+  if(!/(^|\.)youtube\.com$/.test(u.hostname)&&u.hostname!=="www.youtube-nocookie.com")return null;
+  if(u.pathname==="/watch")return u.searchParams.get("v");
+  const m=u.pathname.match(/^\/(embed|shorts|live)\/([^/?]+)/);return m?m[2]:null;
+ }catch{return null}
+}
+function subjectInfo(name){return library.subjects.find(s=>s.name===name)||{icon:"📘",bn:""}}
+function renderSubjects(){
+ const all=[{name:"All",bn:"সব ক্লাস",icon:"✦"}].concat(library.subjects);
+ $("subjects").innerHTML=all.map(s=>`<button class="subject ${activeSubject===s.name?"active":""}" data-subject="${safe(s.name)}"><span class="subject-icon">${safe(s.icon)}</span><strong>${safe(s.name==="All"?"All subjects":s.name)}</strong><small>${safe(s.bn||"Browse every subject")}</small></button>`).join("");
+ $("subjectCount").textContent=library.subjects.length+" subjects";
+ document.querySelectorAll("[data-subject]").forEach(b=>b.addEventListener("click",()=>{activeSubject=b.dataset.subject;render();}));
+}
+function render(){
+ renderSubjects();
+ const q=$("search").value.trim().toLowerCase(),chapter=$("chapter").value,sort=$("sort").value;
+ let items=library.classes.filter(c=>(activeSubject==="All"||c.subject===activeSubject)&&(!chapter||c.chapter===chapter)&&(!q||[c.title,c.subject,c.chapter,c.description].join(" ").toLowerCase().includes(q)));
+ if(sort==="title")items.sort((a,b)=>a.title.localeCompare(b.title));
+ if(sort==="lecture")items.sort((a,b)=>(a.lecture||0)-(b.lecture||0));
+ if(sort==="newest")items.sort((a,b)=>(b.order||0)-(a.order||0));
+ $("listTitle").textContent=activeSubject==="All"?"All classes":activeSubject;
+ $("listSub").textContent=activeSubject==="All"?"Browse the complete class library.":"Classes and lectures in "+activeSubject+".";
+ $("classCount").textContent=items.length+" class"+(items.length===1?"":"es");
+ $("totalClasses").textContent=library.classes.length;
+ $("cards").innerHTML=items.length?items.map(c=>{const s=subjectInfo(c.subject);return `<article class="card"><div class="art"><span class="tag">${safe(c.subject)}</span><span class="subject-icon">${safe(s.icon)}</span><span class="play-icon">▶</span></div><div class="card-body"><h3>${safe(c.title)}</h3><div class="meta"><span>${safe(c.chapter||"General lesson")}</span>${c.lecture?`<span>· Lecture ${safe(c.lecture)}</span>`:""}</div><div class="card-bottom"><button class="watch" data-watch="${safe(c.id)}">▶ &nbsp;Start class</button><span class="meta">SSC · Class 10</span></div></div></article>`}).join(""):`<div class="empty"><div style="font-size:30px">📚</div><b>No classes found</b><span>Try another subject or search term.</span></div>`;
+ document.querySelectorAll("[data-watch]").forEach(b=>b.addEventListener("click",()=>openClass(b.dataset.watch)));
+ const chapters=[...new Set(library.classes.filter(c=>activeSubject==="All"||c.subject===activeSubject).map(c=>c.chapter).filter(Boolean))].sort();
+ const prev=$("chapter").value;$("chapter").innerHTML='<option value="">All chapters</option>'+chapters.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join("");if(chapters.includes(prev))$("chapter").value=prev;
+}
+async function loadLibrary(){
+ try{
+  const res=await fetch("./classes.json",{cache:"no-store"});
+  if(!res.ok)throw new Error("Could not load classes.json");
+  library=await res.json();
+  if(!Array.isArray(library.subjects)||!Array.isArray(library.classes))throw new Error("Invalid classes.json structure");
+  const valid=[];
+  for(const c of library.classes){
+   const id=extractId(c.youtubeUrl||"");
+   if(c.id&&c.title&&c.subject&&id)valid.push({...c,videoId:id});
+   else console.warn("Skipped invalid class entry:",c);
+  }
+  library.classes=valid;render();
+ }catch(err){
+  console.error(err);$("cards").innerHTML='<div class="empty"><div style="font-size:30px">⚠️</div><b>Class library could not be loaded</b><span>Check that classes.json exists beside index.html and contains valid JSON.</span></div>';
+  $("classCount").textContent="Unable to load";
+ }
+}
+function openClass(id){
+ const c=library.classes.find(x=>x.id===id);if(!c)return;currentClass=c;
+ $("nowTitle").textContent=c.title;$("nowMeta").textContent=[c.subject,c.chapter,c.lecture?"Lecture "+c.lecture:""].filter(Boolean).join(" · ");$("nowDesc").textContent=c.description||"";
+ $("endCover").classList.remove("show");$("playerOverlay").classList.add("open");$("playerOverlay").setAttribute("aria-hidden","false");
+ createPlayer();
+}
+function createPlayer(){
+ if(!currentClass)return;
+ if(currentPlayer){currentPlayer.destroy();currentPlayer=null;}
+ $("videoFrame").querySelectorAll("iframe").forEach(x=>x.remove());
+ if(window.YT&&window.YT.Player){
+  currentPlayer=new YT.Player(document.createElement("div"),{
+   videoId:currentClass.videoId,
+   playerVars:{autoplay:1,controls:1,rel:0,playsinline:1,iv_load_policy:3,disablekb:0},
+   events:{onReady:e=>e.target.playVideo(),onStateChange:e=>{if(e.data===YT.PlayerState.ENDED){$("endCover").classList.add("show");}}}
+  });
+  const iframe=currentPlayer.getIframe();$("videoFrame").insertBefore(iframe,$("endCover"));
+ }else{
+  const iframe=document.createElement("iframe");
+  iframe.title="SSC class video";iframe.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+  iframe.referrerPolicy="strict-origin-when-cross-origin";iframe.allowFullscreen=true;
+  iframe.src=`https://www.youtube-nocookie.com/embed/${encodeURIComponent(currentClass.videoId)}?autoplay=1&rel=0&playsinline=1&enablejsapi=1`;
+  $("videoFrame").insertBefore(iframe,$("endCover"));
+  // API enhancement is loaded once; it replaces the basic iframe player on the next open.
+  if(!apiLoading){apiLoading=true;const script=document.createElement("script");script.src="https://www.youtube.com/iframe_api";document.head.appendChild(script);}
+ }
+}
+window.onYouTubeIframeAPIReady=function(){
+ // Reopen the currently selected class in the API player so end-of-video is detected.
+ if(currentClass&&$("playerOverlay").classList.contains("open"))createPlayer();
+};
+function closePlayer(){
+ if(currentPlayer){try{currentPlayer.stopVideo();currentPlayer.destroy()}catch{}currentPlayer=null;}
+ $("videoFrame").querySelectorAll("iframe").forEach(x=>x.remove());
+ $("endCover").classList.remove("show");$("playerOverlay").classList.remove("open");$("playerOverlay").setAttribute("aria-hidden","true");currentClass=null;
+}
+$("search").addEventListener("input",render);$("chapter").addEventListener("change",render);$("sort").addEventListener("change",render);
+$("closePlayer").addEventListener("click",closePlayer);$("backToClasses").addEventListener("click",closePlayer);
+$("playerOverlay").addEventListener("click",e=>{if(e.target===$("playerOverlay"))closePlayer()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&$("playerOverlay").classList.contains("open"))closePlayer()});
+loadLibrary();
+</script>
+</body>
+</html>
